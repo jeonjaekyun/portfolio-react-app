@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+
+.title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:28px;
+    color:black;
+}
 .ant-carousel .slick-slide {
     text-align: center;
     height: 520px;
@@ -14,23 +21,85 @@
     overflow: hidden;
   }
 
-  .ant-carousel .slick-slide .home{
+  .ant-carousel .slick-slide #home{
     background-image:
-        url("../../../commons/images/home.png");
+        url("../../../commons/images/carousel/home.png");
     background-size: 100% 100%;
   }
 
-  .ant-carousel .slick-slide .profile{
+  .ant-carousel .slick-slide #profile{
     background-image:
-        url("../../../commons/images/profile.jpg");
+        url("../../../commons/images/carousel/profile.jpg");
     background-size: 100% 100%;
   }
 
-  .ant-carousel .slick-slide .portfolio{
+  .ant-carousel .slick-slide #portfolio{
     background-image:
-        url("../../../commons/images/portfolio.jpg");
+        url("../../../commons/images/carousel/portfolio.jpg");
     background-size: 100% 100%;
     
+  }
+
+  .itskillimg {
+      width: 100%;
+      height: 200px;
+      background-size: 100% 100%;
+      border: 0px;
+  }
+
+  #javascript {
+    background-image:
+        url("../../../commons/images/itskill/javascript.png");
+  }
+
+  #html {
+    background-image:
+        url("../../../commons/images/itskill/html.png");
+  }
+
+  #css {
+    background-image:
+        url("../../../commons/images/itskill/css.png");
+  }
+
+  #java {
+    background-image:
+        url("../../../commons/images/itskill/java.png");
+  }
+
+  #mysql {
+    background-image:
+        url("../../../commons/images/itskill/mysql.png");
+  }
+
+  #mongodb {
+    background-image:
+        url("../../../commons/images/itskill/mongodb.png");
+  }
+
+  #node {
+    background-image:
+        url("../../../commons/images/itskill/node.png");
+  }
+
+  #express {
+    background-image:
+        url("../../../commons/images/itskill/express.png");
+  }
+
+  #react {
+    background-image:
+        url("../../../commons/images/itskill/react.png");
+  }
+
+  #redux {
+    background-image:
+        url("../../../commons/images/itskill/redux.png");
+  }
+
+  #spring {
+    background-image:
+        url("../../../commons/images/itskill/spring.png");
   }
 
   .ant-carousel .slick-slide div {
