@@ -1,0 +1,40 @@
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 520px;
+    line-height: 520px;
+    background: #364d79;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 520px;
+    line-height: 520px;
+    background: #364d79;
+    overflow: hidden;
+  }
+
+  .ant-carousel .slick-slide .home{
+    background-image:
+        url("../../../commons/images/home.png");
+    background-size: 100% 100%;
+  }
+
+  .ant-carousel .slick-slide .profile{
+    background-image:
+        url("../../../commons/images/profile.jpg");
+    background-size: 100% 100%;
+  }
+
+  .ant-carousel .slick-slide .portfolio{
+    background-image:
+        url("../../../commons/images/portfolio.jpg");
+    background-size: 100% 100%;
+    
+  }
+
+  .ant-carousel .slick-slide div {
+    font-size: 36px;
+    color:#fff;
+    cursor: pointer;
+  }
