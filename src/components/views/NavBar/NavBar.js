@@ -19,7 +19,7 @@ function NavBar() {
                                     <a href="/">Profile</a>
                                 </Menu.Item>
                                 <Menu.Item key="portfolio">
-                                    <a href="/">Portfolio</a>
+                                    <a href="/portfolio">Portfolio</a>
                                 </Menu.Item>
                             </SubMenu>
                         </Menu>
