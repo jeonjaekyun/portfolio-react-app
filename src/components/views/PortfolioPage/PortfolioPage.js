@@ -10,7 +10,7 @@ function PortfolioPage() {
     const listData = [];
 
     listData.push({
-        href: '/portfolio',
+        href: '/https://github.com/jeonjaekyun/portfolio-react-app',
         title: `Portfolio site`,
         description:
             'React AntDesign Netlify',
@@ -20,7 +20,7 @@ function PortfolioPage() {
     });
 
     listData.push({
-        href: '/portfolio',
+        href: '/https://github.com/jeonjaekyun/shoppingmall-app',
         title: `Shopping Mall App`,
         description:
             'Javascript Nodejs Express React Redux MongoDB Antdesing',
@@ -32,7 +32,7 @@ function PortfolioPage() {
     });
     
     listData.push({
-        href: '/portfolio',
+        href: '/https://github.com/jeonjaekyun/SCBooking',
         title: `SCBooking`,
         description:
             'JAVA JSP SpringFramework MySQL MyBatis ApachTomcat',
@@ -44,7 +44,7 @@ function PortfolioPage() {
     });
 
     listData.push({
-        href: '/portfolio',
+        href: '/https://github.com/jeonjaekyun/CheckJum',
         title: `CheckJum`,
         description:
             'Android Java PHP MySQL OpenAPI ApachTomcat',
