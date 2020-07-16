@@ -1,9 +1,10 @@
 import React from 'react'
 import { List } from 'antd';
-import SMLI from '../../../commons/images/Shoppingapp/LandingPage.png';
-import SCBLI from '../../../commons/images/SCBooking/LandingPage.png';
-import CJMI from '../../../commons/images/CheckJum/main.jpg';
-import PSLI from '../../../commons/images/Portfoliosite/LandingPage.png';
+// import SMLI from '../../../commons/images/Shoppingapp/LandingPage.png';
+// import SCBLI from '../../../commons/images/SCBooking/LandingPage.png';
+// import CJMI from '../../../commons/images/CheckJum/main.jpg';
+// import PSLI from '../../../commons/images/Portfoliosite/LandingPage.png';
+import './PortfolioPage.css';
 
 function PortfolioPage() {
     const listData = [];
@@ -15,8 +16,7 @@ function PortfolioPage() {
             'React AntDesign Netlify',
         content:
             `Netlify를 통해 호스팅한 개인 포트폴리오 사이트입니다.`,
-        image:
-            PSLI
+        id:'portfolioimg',
     });
 
     listData.push({
@@ -28,8 +28,7 @@ function PortfolioPage() {
             `Backend는 Nodejs로 Frontend는 React를 활용하여 만든 프로젝트입니다.
             web용 Shopping Mall을 만들었습니다. 회원가입/로그인, 상품 등록,
             장바구니, 상품 상세정보 등의 기능이 있습니다.`,
-        image:
-            SMLI
+        id:'shopmallimg',
     });
     
     listData.push({
@@ -41,8 +40,7 @@ function PortfolioPage() {
             `Spring FrameWork를 활용하여 만든 스터디 카페 예약사이트입니다.
             기본적인 회원가입/로그인, 스터디룸 예약, Q&A, 마이페이지(개인정보, 예약내역, 내가 작성한 Q&A)
             등의 기능이 있습니다.`,
-        image:
-            SCBLI
+        id:'scbookingimg',
     });
 
     listData.push({
@@ -55,8 +53,7 @@ function PortfolioPage() {
             베스트셀러 제공, 도서 상제 정보 페이지, 사용자 위치 기반 공공도서관 정보제공, 사용자의 
             관심도서/ 한줄평/ 개인별점 등록 및 수정 등의 기능이 있습니다.
             `,
-        image:
-            CJMI
+        id:'checkjumimg',
     });
 
     return (
@@ -71,11 +68,13 @@ function PortfolioPage() {
                         <List.Item
                             key={item.title}
                             extra={
-                                <img
-                                    width={400}
-                                    alt="logo"
-                                    src={item.image}
-                                />
+                                // <img
+                                //     width={400}
+                                //     alt="logo"
+                                //     src={item.image}
+                                // />
+                                <div id={item.id}>
+                                </div>
                             }
                         >
                             <List.Item.Meta

@@ -1,4 +1,27 @@
-#shopappimg {
-    background: url('../../../commons/images/shoppingapp/LandingPage.png');
+#portfolioimg {
+    background: url('../../../commons/images/Portfoliosite/LandingPage.png');
+    width:400px;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#shopmallimg {
+    background: url('../../../commons/images/Shoppingapp/LandingPage.png');
+    width:400px;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#scbookingimg {
+    background: url('../../../commons/images/SCBooking/LandingPage.png');
+    width:400px;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#checkjumimg {
+    background: url('../../../commons/images/CheckJum/main.jpg');
+    width:400px;
+    height: 300px;
     background-size: 100% 100%;
 }
