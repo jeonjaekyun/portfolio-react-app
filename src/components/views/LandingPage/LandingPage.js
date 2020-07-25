@@ -1,5 +1,5 @@
 import React from 'react';
-import {Carousel, Row, Col, Card} from 'antd';
+import {Card} from 'antd';
 import './LandingPage.css'
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 

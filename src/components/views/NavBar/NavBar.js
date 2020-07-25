@@ -1,8 +1,5 @@
 import React from 'react'
-import { Menu, Row, Col } from 'antd';
-import {BarsOutlined} from '@ant-design/icons';
 import './NavBar.css';
-const { SubMenu } = Menu;
 
 function NavBar() {
     return (
