@@ -59,8 +59,11 @@ function PortfolioPage() {
     return (
         <div style={{ width: '100%', margin: '0' }}>
             {/* <div style={{ width: '85%', margin: '1rem auto' }}> */}
-            <div>
-                <h2 style={{marginTop:'40px'}}>Portfolio</h2>
+            <div style={{ marginTop: '40px' }}>
+                <div style={{ width: '100px' }}>
+                    <h2>Portfolio</h2>
+                    <hr style={{ border: '1.5px solid lightgreen' }} />
+                </div>
                 <List
                     itemLayout="vertical"
                     size="large"

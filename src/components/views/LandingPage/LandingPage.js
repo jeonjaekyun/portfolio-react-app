@@ -1,15 +1,15 @@
 import React from 'react';
-import {Card} from 'antd';
+import { Card } from 'antd';
 import './LandingPage.css'
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 
 function LandingPage(props) {
 
     const gridStyle = {
-        width:'160px',
-        height:'160px',
-        backgroundSize:'100% 100%',
-        marginRight:'20px'
+        width: '160px',
+        height: '160px',
+        backgroundSize: '100% 100%',
+        marginRight: '20px'
     }
 
     return (
@@ -19,10 +19,13 @@ function LandingPage(props) {
                 <div id="home">
                     <span className="imagetitle">Backend 개발자를 희망하는 신입 개발자 입니다.</span>
                 </div>
-                    
-                <div style={{marginTop:'40px'}}>
-                    
-                    <h2>Skills</h2>
+
+                <div style={{ marginTop: '40px' }}>
+
+                    <div style={{width:'100px'}}>
+                        <h2>Skills</h2>
+                        <hr style={{ border: '1.5px solid red' }} />
+                    </div>
                     <Card title="Language">
                         <Card.Grid style={gridStyle} id="javascript" />
                         <Card.Grid style={gridStyle} id="java" />
@@ -42,9 +45,8 @@ function LandingPage(props) {
                         <Card.Grid style={gridStyle} id="mongodb" />
                         <Card.Grid style={gridStyle} id="mysql" />
                     </Card>
-                    
                 </div>
-                <PortfolioPage/>
+                <PortfolioPage />
             </div>
         </div>
     )
