@@ -1,77 +1,50 @@
 import React from 'react';
-import {Carousel, Row, Col} from 'antd';
+import {Carousel, Row, Col, Card} from 'antd';
 import './LandingPage.css'
+import PortfolioPage from '../PortfolioPage/PortfolioPage';
 
 function LandingPage(props) {
 
-    const onHomeHandler = () => {
-        props.history.push('/');
-    }
-
-    const onProfileHandler = () => {
-        props.history.push('/profile');
-    }
-
-    const onPortfolioHandler = () => {
-        props.history.push('/portfolio');
+    const gridStyle = {
+        width:'160px',
+        height:'160px',
+        backgroundSize:'100% 100%',
+        marginRight:'20px'
     }
 
     return (
         <div style={{ width: '100%', margin: '0' }}>
             <div style={{ width: '85%', margin: '1rem auto' }}>
-                <Carousel autoplay>
-                    <div id="home" onClick={onHomeHandler}>
-                        <span>Backend 개발자를 희망하는 신입 개발자 입니다.</span>
-                    </div>
-                    <div id="profile" onClick={onProfileHandler}>
-                        <span>Profile</span>
-                    </div>
-                    <div id="portfolio" onClick={onPortfolioHandler}>
-                        <span>Portfolio</span>
-                    </div>
-                </Carousel>
-                <div style={{marginTop:'40px'}}>
-                    <span className="title">사용가능 언어 및 기술</span><br/><br/>
-                    <Row gutter={[16,16]}>
-                        <Col span={4}>
-                            <div className="itskillimg" id="javascript"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="html"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="css"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="java"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="mysql"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="mongodb"/>
-                        </Col>
-                    </Row>
-                    <Row gutter={[16,16]}>
-                        <Col span={4}>
-                            <div className="itskillimg" id="node"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="express"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="react"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="redux"/>
-                        </Col>
-                        <Col span={4}>
-                            <div className="itskillimg" id="spring"/>
-                        </Col>
-                        <Col span={4}>
-                        </Col>
-                    </Row>
+
+                <div id="home">
+                    <span className="imagetitle">Backend 개발자를 희망하는 신입 개발자 입니다.</span>
                 </div>
+                    
+                <div style={{marginTop:'40px'}}>
+                    
+                    <h2>Skills</h2>
+                    <Card title="Language">
+                        <Card.Grid style={gridStyle} id="javascript" />
+                        <Card.Grid style={gridStyle} id="java" />
+                    </Card>
+                    <Card title="Frontend">
+                        <Card.Grid style={gridStyle} id="html" />
+                        <Card.Grid style={gridStyle} id="css" />
+                        <Card.Grid style={gridStyle} id="react" />
+                        <Card.Grid style={gridStyle} id="redux" />
+                    </Card>
+                    <Card title="Backend">
+                        <Card.Grid style={gridStyle} id="node" />
+                        <Card.Grid style={gridStyle} id="express" />
+                        <Card.Grid style={gridStyle} id="spring" />
+                    </Card>
+                    <Card title="Database">
+                        <Card.Grid style={gridStyle} id="mongodb" />
+                        <Card.Grid style={gridStyle} id="mysql" />
+                    </Card>
+                    
+                </div>
+                <PortfolioPage/>
             </div>
         </div>
     )

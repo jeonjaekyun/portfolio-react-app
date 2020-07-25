@@ -23,7 +23,7 @@ function PortfolioPage() {
         href: 'https://github.com/jeonjaekyun/shoppingmall-app',
         title: `Shopping Mall App`,
         description:
-            'Javascript Nodejs Express React Redux MongoDB Antdesing',
+            'Javascript Nodejs Express React Redux MongoDB Antdesign',
         content:
             `Backend는 Nodejs로 Frontend는 React를 활용하여 만든 프로젝트입니다.
             web용 Shopping Mall을 만들었습니다. 회원가입/로그인, 상품 등록,
@@ -37,7 +37,7 @@ function PortfolioPage() {
         description:
             'JAVA JSP SpringFramework MySQL MyBatis ApachTomcat',
         content:
-            `Spring FrameWork를 활용하여 만든 스터디 카페 예약사이트입니다.
+            `Spring Framework를 활용하여 만든 스터디 카페 예약사이트입니다.
             기본적인 회원가입/로그인, 스터디룸 예약, Q&A, 마이페이지(개인정보, 예약내역, 내가 작성한 Q&A)
             등의 기능이 있습니다.`,
         id:'scbookingimg',
@@ -58,7 +58,8 @@ function PortfolioPage() {
 
     return (
         <div style={{ width: '100%', margin: '0' }}>
-            <div style={{ width: '85%', margin: '1rem auto' }}>
+            {/* <div style={{ width: '85%', margin: '1rem auto' }}> */}
+            <div>
                 <h2 style={{marginTop:'40px'}}>Portfolio</h2>
                 <List
                     itemLayout="vertical"
@@ -68,17 +69,12 @@ function PortfolioPage() {
                         <List.Item
                             key={item.title}
                             extra={
-                                // <img
-                                //     width={400}
-                                //     alt="logo"
-                                //     src={item.image}
-                                // />
                                 <div id={item.id}>
                                 </div>
                             }
+                            style={{fontSize:'20px'}}
                         >
                             <List.Item.Meta
-                                style={{fontSize:'100px'}}
                                 title={<a href={item.href}>{item.title}</a>}
                                 description={item.description}
                             />
