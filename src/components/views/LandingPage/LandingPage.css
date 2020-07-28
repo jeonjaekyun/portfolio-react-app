@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
 
 .imagetitle {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:2rem;
-    color:white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:2rem;
+  color:white;
+}
+
+.aboutme {
+    font-family: 'Gothic A1', sans-serif;
+    font-size:18px;
+    color:black;
 }
 
 #home{
